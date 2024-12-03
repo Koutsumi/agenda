@@ -7,12 +7,12 @@ export default function HomeHeader(){
             <div className="w-[90%] flex flex-row items-center justify-between">
                 <div className="w-full flex flex-row items-center justify-start gap-2 text-secondary">
                     <TattooMachineIcon/>
-                    <h1 className="text-text-white font-bold">InkAgenda</h1>
+                    <h1 className="text-text-white font-bold">Agenda_Ink</h1>
                 </div>
 
                 <div className="w-full flex flex-row items-center justify-end gap-4">
-                    <Link href={""}>Preços</Link>
-                    <Link href={""}>Contato</Link>
+                    <Link className="hover:text-secondary" href={""}>Preços</Link>
+                    <Link className="hover:text-secondary" href={""}>Contato</Link>
                 </div>
             </div>
         </header>
