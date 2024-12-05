@@ -1,0 +1,21 @@
+import React from 'react';
+
+interface CardProps {
+  title: string;
+  description: string;
+  icon: JSX.Element;
+}
+
+const Card: React.FC<CardProps> = ({ title, description, icon }) => {
+  return (
+    <div className="border border-red-500 p-6 rounded-lg shadow-md bg-white">
+      <div className="flex items-center justify-center w-12 h-12 bg-red-100 text-red-500 rounded-full mb-4">
+        {icon}
+      </div>
+      <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+      <p className="text-sm text-gray-600">{description}</p>
+    </div>
+  );
+};
+
+export default Card;
