@@ -2,6 +2,7 @@ import Banner from "@/app/modules/home/components/Banner";
 import HomeHeader from "@/app/modules/home/components/HomeHeader";
 import Card from '../../modules/home/components/Card';
 import icons from '../../shared/icons/HomeIcons';
+import PriceCard from "@/app/modules/home/components/PricesCard";
 
 export default function HomePage(){
     return(
@@ -42,6 +43,57 @@ export default function HomePage(){
                                 title="Perfis de Clientes"
                                 description="Mantenha registros detalhados dos clientes, incluindo histórico de tatuagens, preferências e instruções de cuidados pós-tatuagem."
                                 icon={icons.profile}
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="w-full flex float-col items-center justify-center bg-primary text-white py-[4em]">
+                <div className="w-[90%] flex flex-col items-center justify-center">
+                        <h2 className="text-[1.6em] mb-[2em]">Confiado por Estúdios de Ponta</h2>
+                        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                            <Card
+                                title="App Revolucionário!"
+                                description='"Este aplicativo de agenda revolucionou a forma como gerenciamos nosso estúdio de tatuagem. É imprescindível para qualquer artista ou proprietário de estúdio sério."'
+                                icon={icons.star}
+                                studio='Thai tattoo'
+                            />
+                            <Card
+                                title="App Revolucionário!"
+                                description='"Este aplicativo de agenda revolucionou a forma como gerenciamos nosso estúdio de tatuagem. É imprescindível para qualquer artista ou proprietário de estúdio sério."'
+                                icon={icons.star}
+                                studio='Thai tattoo'
+                            />
+                            <Card
+                                title="App Revolucionário!"
+                                description='"Este aplicativo de agenda revolucionou a forma como gerenciamos nosso estúdio de tatuagem. É imprescindível para qualquer artista ou proprietário de estúdio sério."'
+                                icon={icons.star}
+                                studio='Thai tattoo'
+                            />
+                        </div>
+                    </div>
+                </section>
+
+                <section className="w-full flex float-col items-center justify-center bg-white text-primary py-[4em]">
+                <div className="w-[90%] flex flex-col items-center justify-center">
+                        <h2 className="text-[1.6em] mb-[2em]">Preços</h2>
+                        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                            <PriceCard
+                                title="Artista Solo"
+                                items={["1 Perfil de Artista", "Agendamento Básico", "Gerenciamento de Clientes", "Agendamento Online"]}
+                                price="50,00"
+                            />
+
+                            <PriceCard
+                                title="Artista Solo"
+                                items={["1 Perfil de Artista", "Agendamento Básico", "Gerenciamento de Clientes", "Agendamento Online"]}
+                                price="50,00"
+                            />
+
+                            <PriceCard
+                                title="Artista Solo"
+                                items={["1 Perfil de Artista", "Agendamento Básico", "Gerenciamento de Clientes", "Agendamento Online"]}
+                                price="50,00"
                             />
                         </div>
                     </div>
