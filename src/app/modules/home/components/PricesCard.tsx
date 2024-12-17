@@ -1,4 +1,4 @@
-import CheckIcon from '@/app/shared/icons/CheckIcon';
+import { Check } from 'lucide-react';
 import React from 'react';
 
 interface CardProps {
@@ -16,7 +16,7 @@ const PriceCard: React.FC<CardProps> = ({ title, items, price}) => {
             <ul className='text-primary'>
                 {
                     items.map(item => (
-                        <li className='my-1 flex flex-row items-center justify-start gap-2'><span className='text-secondary'><CheckIcon/></span>{item}</li>
+                        <li className='my-1 flex flex-row items-center justify-start gap-2'><span className='text-secondary'><Check/></span>{item}</li>
                     ))
                 }
             </ul>
