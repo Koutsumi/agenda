@@ -1,8 +1,9 @@
 import Banner from "@/app/modules/home/components/Banner";
 import HomeHeader from "@/app/modules/home/components/HomeHeader";
 import Card from '../../modules/home/components/Card';
-import icons from '../../shared/icons/HomeIcons';
 import PriceCard from "@/app/modules/home/components/PricesCard";
+import { BarChart, Calendar, Clock, Star, Syringe, User, Zap } from "lucide-react";
+import HomeFooter from "@/app/modules/home/components/HomeFooter";
 
 export default function HomePage(){
     return(
@@ -17,32 +18,32 @@ export default function HomePage(){
                             <Card
                                 title="Agendamento Inteligente"
                                 description="Gerencie eficientemente os agendamentos de tatuagens e piercings com nosso sistema intuitivo de calendário."
-                                icon={icons.calendar}
+                                icon={Calendar}
                             />
                             <Card
                                 title="Personalização de Serviços"
                                 description="Adapte os agendamentos para tatuagens ou piercings, incluindo tamanho, estilo e preferências do artista."
-                                icon={icons.customize}
+                                icon={Syringe}
                             />
                             <Card
                                 title="Controle de Tempo"
                                 description="Monitore a duração das sessões para otimizar a eficiência do seu estúdio e os horários dos artistas."
-                                icon={icons.clock}
+                                icon={Clock}
                             />
                             <Card
                                 title="Análise de Negócios"
                                 description="Gere dados perspicazes sobre estilos populares, horários de pico e receita para informar decisões de negócios."
-                                icon={icons.analytics}
+                                icon={BarChart}
                             />
                             <Card
                                 title="Agendamento Rápido"
                                 description="Permita que os clientes agendem facilmente online, reduzindo o tráfego telefônico e oportunidades perdidas."
-                                icon={icons.fastScheduling}
+                                icon={Zap}
                             />
                             <Card
                                 title="Perfis de Clientes"
                                 description="Mantenha registros detalhados dos clientes, incluindo histórico de tatuagens, preferências e instruções de cuidados pós-tatuagem."
-                                icon={icons.profile}
+                                icon={User}
                             />
                         </div>
                     </div>
@@ -55,19 +56,19 @@ export default function HomePage(){
                             <Card
                                 title="App Revolucionário!"
                                 description='"Este aplicativo de agenda revolucionou a forma como gerenciamos nosso estúdio de tatuagem. É imprescindível para qualquer artista ou proprietário de estúdio sério."'
-                                icon={icons.star}
+                                icon={Star}
                                 studio='Thai tattoo'
                             />
                             <Card
                                 title="App Revolucionário!"
                                 description='"Este aplicativo de agenda revolucionou a forma como gerenciamos nosso estúdio de tatuagem. É imprescindível para qualquer artista ou proprietário de estúdio sério."'
-                                icon={icons.star}
+                                icon={Star}
                                 studio='Thai tattoo'
                             />
                             <Card
                                 title="App Revolucionário!"
                                 description='"Este aplicativo de agenda revolucionou a forma como gerenciamos nosso estúdio de tatuagem. É imprescindível para qualquer artista ou proprietário de estúdio sério."'
-                                icon={icons.star}
+                                icon={Star}
                                 studio='Thai tattoo'
                             />
                         </div>
@@ -98,9 +99,17 @@ export default function HomePage(){
                         </div>
                     </div>
                 </section>
-            </main>
-            
 
+                <section className="w-full flex flex-col items-center justify-center bg-highlight text-primary py-[4em]">
+                    <div className="w-[90%] flex flex-col items-center  justify-center">
+                        <h2 className="text-[1.6em] mb-[2em]">Pronto para Transformar Seu Estúdio?</h2>
+                        <p>Junte-se à crescente comunidade de profissionais de tatuagem usando o InkTime Studio para elevar seus negócios.</p>
+                        <a href="" className="bg-secondary py-2 px-4 rounded-lg mt-[4em] text-white hover:bg-white hover:text-secondary hover:border-2 hover:border-secondary"><button>Faça um teste grátis!</button></a>
+                    </div>
+
+                </section>
+            </main>
+            <HomeFooter/>
         </>
     )
 
