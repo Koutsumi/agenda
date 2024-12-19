@@ -1,4 +1,4 @@
-export default function TattooMachineIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+export default function TattooMachineIcon(): JSX.Element {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
