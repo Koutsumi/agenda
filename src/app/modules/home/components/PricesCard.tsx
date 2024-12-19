@@ -15,8 +15,8 @@ const PriceCard: React.FC<CardProps> = ({ title, items, price}) => {
             <p className='text-[1.5em] text-secondary font-bold my-3'>R${price}/mês</p>
             <ul className='text-primary'>
                 {
-                    items.map(item => (
-                        <li className='my-1 flex flex-row items-center justify-start gap-2'><span className='text-secondary'><Check/></span>{item}</li>
+                    items.map((item, index) => (
+                        <li key={index} className='my-1 flex flex-row items-center justify-start gap-2'><span className='text-secondary'><Check/></span>{item}</li>
                     ))
                 }
             </ul>
