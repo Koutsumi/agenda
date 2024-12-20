@@ -75,7 +75,7 @@ export default function HomePage(){
                     </div>
                 </section>
 
-                <section className="w-full flex float-col items-center justify-center bg-white text-primary py-[4em]">
+                <section id="prices" className="w-full flex float-col items-center justify-center bg-white text-primary py-[4em]">
                 <div className="w-[90%] flex flex-col items-center justify-center">
                         <h2 className="text-[1.6em] mb-[2em]">Preços</h2>
                         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
@@ -104,7 +104,7 @@ export default function HomePage(){
                     <div className="w-[90%] flex flex-col items-center  justify-center">
                         <h2 className="text-[1.6em] mb-[2em]">Pronto para Transformar Seu Estúdio?</h2>
                         <p>Junte-se à crescente comunidade de profissionais de tatuagem usando o InkTime Studio para elevar seus negócios.</p>
-                        <a href="" className="bg-secondary py-2 px-4 rounded-lg mt-[4em] text-white hover:bg-white hover:text-secondary hover:border-2 hover:border-secondary"><button>Faça um teste grátis!</button></a>
+                        <a href="" className="bg-secondary py-2 px-4 rounded-lg mt-[4em] text-white hover:bg-white hover:text-secondary hover:border-2 border-2 hover:border-secondary border-secondary"><button>Faça um teste grátis!</button></a>
                     </div>
 
                 </section>
